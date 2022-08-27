@@ -1,4 +1,4 @@
-//html selectors
+//html elements selector
 
 const body = document.querySelector("body");
 const paraValue = document.getElementById("paraValue");
@@ -28,7 +28,6 @@ eraser.addEventListener("click", (e) => {
 });
 
 clear.addEventListener("click", clearTable);
-
 
 function showValue() {
     paraValue.textContent = `${rangeBar.value} x ${rangeBar.value}`;
@@ -63,5 +62,5 @@ function clearTable() {
         document.getElementById(`square${i}`).style.backgroundColor = "white";
     }
 }
-removeSquares()
 
+removeSquares()
